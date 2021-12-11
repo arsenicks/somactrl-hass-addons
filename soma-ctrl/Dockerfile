@@ -8,11 +8,11 @@ RUN \
     curl -sSLf -o /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
 
-RUN apk add --no-cache --update --unsafe-perms nodejs npm
+RUN apk add --no-cache --update nodejs npm
 
 WORKDIR /usr/src/app
 
-RUN npm install -g soma-ctrl
+RUN npm -g config set user root && npm install -g soma-ctrl
 
 COPY ./entrypoint.sh ./
 
