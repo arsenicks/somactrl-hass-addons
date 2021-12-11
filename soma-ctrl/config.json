@@ -1,6 +1,6 @@
 {
 "name": "soma-ctrl Add-on",
-"version": "0.01",
+"version": "0.02",
 "slug": "soma-ctrl",
 "description": "Util for controlling SOMA smart shade, either over MQTT or via a HTTP API",
 "url":"https://github.com/arsenicks/somactrl-hass-addons",
