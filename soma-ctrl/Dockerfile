@@ -12,7 +12,7 @@ RUN apk add --no-cache --update nodejs npm
 
 WORKDIR /usr/src/app
 
-RUN npm -g config set user root && npm install -g soma-ctrl
+RUN npm -g config set user root && npm install --unsafe-perms  -g soma-ctrl
 
 COPY ./entrypoint.sh ./
 
