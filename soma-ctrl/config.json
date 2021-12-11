@@ -1,0 +1,29 @@
+{
+"name": "soma-ctrl Add-on",
+"version": "0.01",
+"slug": "soma-ctrl",
+"description": "Util for controlling SOMA smart shade, either over MQTT or via a HTTP API",
+"url":"https://github.com/arsenicks/somactrl-hass-addons",
+"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+"map": [
+  "config:rw"
+  ],
+"services": [
+  "mqtt:need"
+  ],
+"options": {
+  "discover_timeout":  "60",
+  "devices_expected": "number of device you expect to discover",
+  "mqtt_url": "mqtt://ip-or-fqdn",
+  "mqtt_username": "MQTTUSER",
+  "mqtt_password": "MQTTPASSWORD"
+},
+"schema": {
+  "discover_timeout":  "str",
+  "devices_expected": "str",
+  "mqtt_url": "str",
+  "mqtt_username": "str",
+  "mqtt_password": "password"
+},
+"image": "ghcr.io/arsenicks/{arch}-soma-ctrl"
+}
