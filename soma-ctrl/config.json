@@ -4,7 +4,7 @@
 "slug": "soma-ctrl",
 "description": "Util for controlling SOMA smart shade, either over MQTT or via a HTTP API",
 "url":"https://github.com/arsenicks/somactrl-hass-addons",
-"arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+"arch": ["amd64", "i386"],
 "map": [
   "config:rw"
   ],
