@@ -9,7 +9,7 @@ RUN \
     curl -sSLf -o /usr/bin/tempio \
     "https://github.com/home-assistant/tempio/releases/download/${TEMPIO_VERSION}/tempio_${BUILD_ARCH}"
 
-RUN apk add --no-cache --update nodejs npm gcc make
+RUN apk add --no-cache --update nodejs npm gcc make musl-dev
 
 WORKDIR /usr/src/app
 
